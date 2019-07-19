@@ -1,0 +1,37 @@
+{
+  "name": "evolution-theme-starter",
+  "version": "1.0.0",
+  "description": "Evolution Theme Starter",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "keywords": [
+    "directadmin",
+    "evolution",
+    "theme"
+  ],
+  "author": "JBMC Software",
+  "license": "MIT",
+  "devHost": "http://dev.host.example:2222",
+  "devDependencies": {
+    "ajv": "^6.10.2",
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-append-prepend": "^1.0.8",
+    "gulp-cli": "^2.2.0",
+    "gulp-file": "^0.4.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-zip": "^5.0.0",
+    "proxy-middleware": "^0.15.0",
+    "svg-sprite": "^1.5.0",
+    "through2": "^3.0.1",
+    "transformer-proxy": "^0.3.5"
+  },
+  "dependencies": {}
+}
