@@ -1,6 +1,6 @@
 # Evolution Theme Starter
 
-This project should serve as starting point for developing [Evolution](https://www.directadmin.com/evolution.php) skin themes. Custom themes allows you to override colors, menus, icons and apply custom styling to Evolution's layouts.
+This project should serve as starting point for developing [Evolution](https://www.directadmin.com/evolution.php) skin themes. Custom themes allow you to override colors, menus, icons and apply custom styling to Evolution layouts.
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ These instructions will get you a copy of the project up and running on your loc
 3. Open Skin Options and change theme to the one you're developing now.
 
 #### Development: colors.json
-You are able to override some of main Evolution colors with providing custom `src/colors.json` file. There is four possible colors to override: `primary`, `safe`, `danger` and `neutral`, each could be skipped (defaults will be used). Colors should be provided in HSL format(you could use this [converter](https://www.w3schools.com/colors/colors_converter.asp)).
+You are able to override some of main Evolution colors with providing custom `src/colors.json` file. There is four possible colors to override: `primary-dark`, `safe`, `danger` and `neutral`, each could be skipped (defaults will be used). Colors should be provided in HSL format(you could use this [converter](https://www.w3schools.com/colors/colors_converter.asp)) or extract color customization from `config.json`.
 
 Sample color object:
 ```json
@@ -67,8 +67,8 @@ Sample category object:
     ]
 }
 ```
-Here you can see 4 possible use menu entry types:
-1. Standard route: this is served with vue-router inside Vue app, and will not force page refresh.
+There are 4 possible entry types:
+1. Standard route: this is served with vue-router inside Vue app, and will force refresh of the page.
 2. External link: points to external page, and will leave Evolution when used. `newTab` property is optional, `false` by default.
 3. Plugins entry: this is the marker, after which plugin entries will be placed. This entry itself will not be shown.
 4. Help entry -- standard external link with `{{help}}` as href. This _magic_ word will be replaced with link to actual help article.

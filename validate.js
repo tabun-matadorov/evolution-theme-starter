@@ -67,7 +67,7 @@ const ENTRIES = {
 
 const colorsSchema = {
     properties: {
-        primary: COLOR,
+        'primary-dark': COLOR,
         safe: COLOR,
         danger: COLOR,
         neutral: COLOR,
