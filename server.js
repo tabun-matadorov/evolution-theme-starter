@@ -19,7 +19,7 @@ const skinInfo = () => {
         development: true,
     };
     if (fs.existsSync('./dist/colors.json')) {
-        data['colors.json'] = JSON.stringify(require('./dist/colors.json'));
+        data['colors.json'] = fs.readFileSync('./dist/colors.json', 'utf8');
     }
     ['icons.svg', 'images.svg'].forEach(file => {
         if (fs.existsSync(path.resolve(__dirname, 'dist', file))) {
